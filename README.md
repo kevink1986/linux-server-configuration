@@ -31,6 +31,7 @@
         - `chmod 644 .ssh/authorized_keys`
 9. Disable password login —> edited the sshd config file via `sudo nano /etc/ssh/sshd_config`
     - set PasswordAuthentication to no (was already set to no)
+    - Set PermitRootLogin to no
     - reset ssh service via `sudo service ssh restart`
 
 ### Firewall settings
@@ -102,4 +103,5 @@
 - https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
 - https://www.howtoinstall.co/en/ubuntu/utopic/universe/python-oauth2client/
 - http://initd.org/psycopg/docs/
+- https://askubuntu.com/questions/27559/how-do-i-disable-remote-ssh-login-as-root-from-a-server
 
