@@ -49,12 +49,12 @@ URL: http://35.156.85.227/catalog
 12. Installed an Apache HTTP server via `sudo apt-get install apache2`
 13. Installed the WSGI module to handle incoming requests via python
     - Created a wsgi file in folder /var/www/catalog/catalog.wsgi with the following content
-        -   import sys
+        -   `import sys
             sys.path.insert(0, '/home/kkriek/item-catalog')
 
-            from application import app as application
+            from application import app as application`
     - Edited the /etc/apache2/sites-enabled/000-default.conf config file. I added the following content in the VirtualHost element
-        -   WSGIDaemonProcess catalog
+        -   `WSGIDaemonProcess catalog
             WSGIScriptAlias / /var/www/catalog/catalog.wsgi
 
             <Directory /var/www/catalog>
@@ -62,7 +62,7 @@ URL: http://35.156.85.227/catalog
                WSGIApplicationGroup %{GLOBAL}
                Order deny,allow
                Allow from all
-            </Directory>
+            </Directory>`
     - restarted the apache server via `sudo apache2ctl restart`
 14. Installed Postgres via `sudo apt-get install postgresql`
 15. Installen git via `sudo apt-get install git` (git was already installed)
