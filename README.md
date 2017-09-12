@@ -1,8 +1,8 @@
 # linux-server-configuration
 
-IP Address: 35.156.85.227
-SSH port: 2200
-URL: http://35.156.85.227/catalog
+- IP Address: 35.156.85.227
+- SSH port: 2200
+- URL: http://35.156.85.227/catalog
 
 
 ## Summary of the software installed and configuration changes
